@@ -329,6 +329,9 @@ fieldset {
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
+.phone-number:hover{
+  color: #ffe0a2;
+} 
 legend {
   box-sizing: border-box;
   /* 1 */
@@ -749,7 +752,9 @@ blockquote.quote {
 
 .bg-primary {
   background-color: #b89b5e !important; }
-
+.footer-top{
+  background-color: #223555;
+}
 .bg-secondary {
   background-color: #223555 !important; }
 
@@ -992,9 +997,11 @@ hr.content {
   background-color: #b89b5e;
   color: #ffffff; }
   .btn-primary:hover {
-    background-color: #223555;
+    background-color: #94763b;
     color: #ffffff; }
-
+.home-links{
+  color: #fff;
+}
 .btn-secondary {
   background-color: #223555; }
   .btn-secondary:hover {
