@@ -514,13 +514,27 @@ ul {
 
 /* CUSTOM GLOBAL */
 .content-wrap {
-  padding: 80px 0; }
+  padding: 80px 0;
+ }
 
 .content-wrap-60 {
   padding: 60px 0; }
 
 .content-wrap-40 {
   padding: 40px 0; }
+
+.banner-page-img{
+  background-image: url(/Frontend/images/bg-home05.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}  
+
+.welcome-section{
+  background-image:url(/Frontend/images/about.jpg);
+  backdrop-filter: blur(20px);
+  background-repeat: no-repeat;
+  background-size: cover;
+}  
 
 .uk16 {
   font-size: 16px; }
@@ -813,6 +827,7 @@ blockquote.quote {
     color: #222222; }
 
 .pos-relative {
+  background-image: url();
   position: relative; }
 
 .banner-page {
@@ -832,11 +847,12 @@ blockquote.quote {
     bottom: 0;
     background-color: rgba(34, 34, 34, 0.2); }
   .banner-page .content-wrap {
-    padding: 60px 0; }
+    padding: 60px 0; 
+  }
   .banner-page .title-page {
     text-align: center;
     margin-bottom: 0;
-    color: #b89b5e; }
+    color: #94763b; }
   .banner-page .breadcrumb-container {
     background-color: transparent; }
   .banner-page .breadcrumb {
