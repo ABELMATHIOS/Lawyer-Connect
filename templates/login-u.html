@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+
+{% block content%}
+
+     {% for message in get_flashed_messages()%}
+        {{message}}
+      {% endfor %}  
+
+      <form action="{{url_for('login_u')}}" method="post">
+
+        <input type="text" class="form-input" placeholder="username" name="username">
+        
+        <input type="password" class="form-input" placeholder="password" name="password">
+
+        <button type="submit">Login</button>
+
+    </form>
+{% endblock %}

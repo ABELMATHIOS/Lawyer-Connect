@@ -1,0 +1,44 @@
+{% extends 'base.html'%}
+
+{% block content%}
+
+     {% for message in get_flashed_messages()%}
+        {{message}}
+      {% endfor %}  
+
+        
+        <br>
+<section id="registration">    
+    <div class="form-div-container">   
+        <div class="form-container">
+            <h2 style="color: #fff;">Register</h2>
+            <div class="user-lawyer" width="inherit">
+                <div class="active-link user-div">USER</div>
+                <div class="user-div"><a class="rgt-link" href="{{url_for('lawyer_signup')}}">LAWYER</a></div>
+
+            </div>
+
+                    <br><br>
+                        <form class="user-form" action="" method="post">
+                            <div class="rw1">
+                                {{u_form.hidden_tag()}}
+                                {{u_form.first_name(placeholder="First Name",class="form-input")}}
+                                {{u_form.last_name(placeholder="Last Name",class="form-input")}}
+                            </div>
+                            <div class="rw1">
+                                {{u_form.email(placeholder="Email",class="form-input")}} 
+                                {{u_form.username(placeholder="Username",class="form-input")}} 
+                            </div>  
+                            <div class="rw1"> 
+                                {{u_form.phone(placeholder="Phone",class="form-input")}}
+                                {{u_form.password(placeholder="Password",class="form-input")}}
+                            </div>     
+                            <div class="form-div-btn">
+                             {{u_form.submit(class="form-btn")}}
+                            <p>Already have an account <a class="register-sign-in-link" href="{{url_for('login_u')}}">Log in</a></p>
+                            </div>
+                        </form>
+        </div>
+    </div> 
+</section>   
+{% endblock %}

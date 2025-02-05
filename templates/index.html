@@ -1,11 +1,17 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
+{% for message in get_flashed_messages() %}
+    {{message}}
+
+{% endfor %}
+   
 	<!-- BANNER -->
     <div id="oc-fullslider" class="banner">
-    	<div class="owl-carousel owl-theme full-screen">
-	    	<div class="item">
-	        	<img src="{{url_for('static', filename='images/bg-home.jpg')}}" alt="Slider">
+		<div class="owl-carousel owl-theme full-screen">
+			<div class="item">
+				<img src="{{url_for('static', filename='images/bg-home.jpg')}}" alt="Slider">
 	        	<div class="overlay-bg"></div>
 	        	<div class="container d-flex align-items-center">
 	            	<div class="wrap-caption">

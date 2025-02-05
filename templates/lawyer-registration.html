@@ -1,0 +1,51 @@
+{% extends 'base.html'%}
+
+{% block content%}
+
+     {% for message in get_flashed_messages()%}
+        {{message}}
+      {% endfor %}  
+
+        
+        <br>
+<section id="registration"> 
+    <div class="form-div-container">   
+        <div class="form-container">
+            <h2 style="color: #fff;">Register</h2>
+            <div class="user-lawyer" width="inherit">
+                <div id="user-registration-link" class="user-div"><a class="rgt-link" href="{{url_for('signup')}}">USER</a></div>
+                <div id="lawyer-registration-link" class="active-link user-div">LAWYER</div>
+            </div>
+                    <br><br>
+                        <form class="user-form" action="" method="post">
+                            <div class="rw1">
+                                    {{form.hidden_tag()}}
+                                    {{form.l_first_name(class="form-input",placeholder="First Name")}} <br>
+                                    {{form.l_last_name(class="form-input",placeholder="Last Name")}}
+                            </div>
+                            <div class="rw1">
+                                    {{form.l_email(class="form-input",placeholder="Email")}} <br>
+                                    {{form.l_username(class="form-input",placeholder="Username")}} <br>
+                                </div class="rw1">
+                                <div>
+                                    {{form.l_password(class="form-input",placeholder="Password")}}
+                                    {{form.l_phone(class="form-input",placeholder="Phone")}}
+                                </div>
+                                <div class="rw1">
+                                    {{form.l_specialty(class="form-input",placeholder="Specialty")}}
+                                   <label class="label-form">Experience: 
+                                    {{form.l_experience(placeholder="Experience",class="form-input")}}
+                                   </label>
+                            </div>
+                            <div class="form-div-btn">
+                                {{form.submit(class="form-btn")}}
+                                <p>Already have an account <a class="register-sign-in-link" href="{{url_for('login_l')}}">Log in</a></p>
+                            </div>
+                </div>
+                        </form>
+                    </div>
+          
+        </div>
+    </div> 
+</section>   
+{% endblock %}

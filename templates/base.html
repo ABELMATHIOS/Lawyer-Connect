@@ -94,13 +94,13 @@
 			        <div class="collapse navbar-collapse" id="navbarNavDropdown">
 			            <ul class="navbar-nav ml-auto">
 			            	<li class="nav-item active">
-			                    <a class="nav-link" href="index.html">HOME</a>
+						<a class="nav-link" href="{{url_for('index')}}">HOME</a>
 			                </li>
 			            	<li class="nav-item">
-			                    <a class="nav-link" href="about.html">ABOUT US</a>
+			                    <a class="nav-link" href="{{url_for('about')}}">ABOUT US</a>
 			                </li>
 			                <li class="nav-item">
-			                    <a class="nav-link" href="attorneys.html">ATTORNEYS</a>
+			                    <a class="nav-link" href="{{url_for('attorneys')}}">ATTORNEYS</a>
 			            
 			                </li>
 			            	<!-- <li class="nav-item dropdown">
@@ -113,11 +113,14 @@
 							    </div>
 			                </li> -->
 			            	<li class="nav-item dropdown">
-								<a class="nav-link" href="page-news-single.html">NEWS</a>
+								<a class="nav-link" href="{{url_for('news')}}">NEWS</a>
 			                </li>
 			            	<li class="nav-item">
-			                    <a class="nav-link" href="contact.html">CONTACT US</a>
+			                    <a class="nav-link" href="{{url_for('contact')}}">CONTACT US</a>
 			                </li>
+			            	<div class="register-btn1">
+								<a class="register-btn" href="{{url_for('signup')}}">REGISTER</a>
+							</div>
 			            </ul>
 			        </div>
 			    </nav> <!-- -->

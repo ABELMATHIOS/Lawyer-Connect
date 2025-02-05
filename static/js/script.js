@@ -152,6 +152,28 @@ $(document).ready(function(){
 	
 });
 
+// ----------Registration picker---------------------------------------
+
+// let user_register_links = document.getElementById('user-registration-link')	
+// let lawyer_register_links = document.getElementById('lawyer-registration-link')
+// let user_form_container = document.getElementById('user-form-div')
+// let lawyer_form_container = document.getElementById('lawyer-form-div')
+
+// user_register_links.addEventListener('click', ()=>{
+// 	user_form_container.classList.remove('user-form-container-remover')
+// 	lawyer_form_container.classList.add('lawyer-form-container')
+
+// })
+
+
+// lawyer_register_links.addEventListener('click', ()=>{
+// 	lawyer_form_container.classList.remove('lawyer-form-container')
+// 	user_form_container.classList.add('user-form-container-remover')
+
+// }
+// )
+
+
 
 
 

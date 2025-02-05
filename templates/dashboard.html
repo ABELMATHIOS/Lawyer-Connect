@@ -1,0 +1,12 @@
+{% extends 'base.html'%}
+
+{% block content%}
+
+<h1> wellcome {{session.get("username")}}</h1>
+ <form action="{{url_for('logout')}}" method="post">
+
+   <button type="submit">log out</button>
+
+</form>
+
+{% endblock %}
