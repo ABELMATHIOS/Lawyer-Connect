@@ -1,26 +1,57 @@
-{% extends 'base.html'%}
+{% extends 'base.html' %}
 
 {% block content %}
 
-	<!-- 404 -->
-	<div class="section">
-		<div class="content-wrap">
-			<div class="container">				
+  <!-- 404 -->
+  <div class="section">
+    <div class="content-wrap">
+      <div class="container">        
 
-				<div class="row">
-					
-					<div class="col-12 col-md-12">
-						<div class="text-center page404">
-							<h1 class="title">404</h1>
-							<h3 class="text-secondary">The requested page cannot be found!</h3>
-							<p class="mb-5">The page you are looking for was moved, removed, renamed or might never existed.</p>
-							<a href="index.html" class="btn btn-primary">Back to Home</a>
-						</div>
-					</div>	
+        <div class="row">
+          
+          <div class="col-12 col-md-12">
+            <div class="text-center page404">
+              <h1 class="title">404</h1>
+              <h3 class="text-secondary">The requested page cannot be found!</h3>
+              <p class="mb-5">The page you are looking for was moved, removed, renamed or might never existed.</p>
+              <a href="index.html" class="btn btn-primary">Back to Home</a>
+            </div>
+          </div>  
 
-				</div>
-			</div>
-		</div>
-	</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-{% endblock%}
+  <!-- PayPal Button -->
+  <form action="/pay" method="POST">
+    <button type="submit">Pay with PayPal</button>
+  </form>
+
+  <!-- Stripe Button -->
+   
+  <button id="checkout-button">Pay with Stripe</button>
+
+  <!-- Include Stripe.js -->
+  <script src="https://js.stripe.com/v3/"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var stripe = Stripe("{{ stripe_public_key }}");
+
+      document.getElementById("checkout-button").addEventListener("click", function () {
+        fetch("/create-checkout-session", { method: "POST" })
+          .then(response => response.json())
+          .then(session => {
+            if (session.id) {
+              stripe.redirectToCheckout({ sessionId: session.id });
+            } else {
+              console.error("Session ID missing:", session);
+            }
+          })
+          .catch(error => console.error("Error:", error));
+      });
+    });
+  </script>
+
+{% endblock %}
