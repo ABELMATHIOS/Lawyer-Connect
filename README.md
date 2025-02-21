@@ -271,7 +271,7 @@ Contact us through Github:
 2. Siraj Abdulkadir: [https://github.com/Siraj-Abdulkadir](https://github.com/Siraj-Abdulkadir)
 3. Nathenael Tamirat: [https://github.com/NathenaelTamirat](https://github.com/NathenaelTamirat)
 4. Menilek Ayele: [https://github.com/MenilekAyele](https://github.com/MenilekAyele)
-
+5. Haileyesus Dagne: [https://github.com/Haile-Eyesus](https://github.com/Haile-Eyesus).
 WE ARE EAGER TO GROW AND LEARN!
 
 ## 8. Acknowledgement 
