@@ -257,7 +257,9 @@ Here are some Issues you may encounter with Lawyer connect as well as their solu
 <a id="contactinformation"></a>
 We, the team from Lawyer-Connect, are always happy about your feedback on our project or ideas for future collabortaion, we welcome your input. Your thoughts and suggestions will help us grow and improve this platform. We believe in the power of collaboratioin and would be exicited to explore potential partnerships for future projects.
 
-Contact us through Github: 
+Contact us through Github: [Lawyer-Connect Repository](https://github.com/ABELMATHIOS/Lawyer-Connect/)
+
+####contributers
 1. Abel Mathios: [https://github.com/ABELMATHIOS](https://github.com/ABELMATHIOS)
 2. Siraj Abdulkadir: [https://github.com/Siraj-Abdulkadir](https://github.com/Siraj-Abdulkadir)
 3. Nathenael Tamirat: [https://github.com/NathenaelTamirat](https://github.com/NathenaelTamirat)
