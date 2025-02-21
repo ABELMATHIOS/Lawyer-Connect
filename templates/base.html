@@ -36,11 +36,14 @@
 	<!-- ==============================================
 	Custom Stylesheet
 	=============================================== -->
+<<<<<<< HEAD
 <!-- 
 	------------------------------------bootstrap--------------------------- -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> </head>
 
 
+=======
+>>>>>>> origin/main
 	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}" />
 	
     <script src="{{url_for('static', filename='js/vendor/modernizr.min.js')}}"></script>
@@ -99,18 +102,39 @@
 			        <div class="collapse navbar-collapse" id="navbarNavDropdown">
 			            <ul class="navbar-nav ml-auto">
 			            	<li class="nav-item active">
+<<<<<<< HEAD
 						<a class="nav-link" href="{{url_for('index')}}">HOME</a>
+=======
+			                    <a class="nav-link" href="index.html">HOME</a>
+>>>>>>> origin/main
 			                </li>
 			            	<li class="nav-item">
 			                    <a class="nav-link" href="{{url_for('about')}}">ABOUT US</a>
 			                </li>
 			                <li class="nav-item">
+<<<<<<< HEAD
 			                    <a class="nav-link" href="{{url_for('attorneys')}}">ATTORNEYS</a>
 			            
 			                </li>
 
 			            	<li class="nav-item dropdown">
 								<a class="nav-link" href="{{url_for('news')}}">NEWS</a>
+=======
+			                    <a class="nav-link" href="attorneys.html">ATTORNEYS</a>
+			            
+			                </li>
+			            	<!-- <li class="nav-item dropdown">
+			                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						          PRACTICE AREA
+						        </a>
+			                    <div class="dropdown-menu">
+			                    	<a class="dropdown-item" href="practice-area.html">PRACTICE AREA LIST</a>
+	          						<a class="dropdown-item" href="practice-area-single.html">SINGLE PRACTICE AREA</a>
+							    </div>
+			                </li> -->
+			            	<li class="nav-item dropdown">
+								<a class="nav-link" href="page-news-single.html">NEWS</a>
+>>>>>>> origin/main
 			                </li>
 			            	<li class="nav-item">
 			                    <a class="nav-link" href="{{url_for('contact')}}">CONTACT US</a>
@@ -127,9 +151,14 @@
 
     </div>
 
+<<<<<<< HEAD
 
 {% block content %}
 
+=======
+{% block content %}
+
+>>>>>>> origin/main
 {% endblock %}
 
 	<!-- CTA -->

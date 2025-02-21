@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from flask import Flask, render_template, flash,url_for, session,request, redirect, jsonify
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, EmailField, PasswordField,SelectField,DateTimeLocalField
@@ -389,6 +390,32 @@ paypalrestsdk.configure({
 # Stripe Configuration
 stripe.api_key = os.getenv("STRIPE_SECRET_KEY")
 
+=======
+from flask import Flask, jsonify, render_template, request, redirect, url_for
+import paypalrestsdk
+import stripe
+import os
+from dotenv import load_dotenv
+
+load_dotenv()  # Load environment variables
+
+app = Flask(__name__)
+
+# PayPal Configuration
+paypalrestsdk.configure({
+    "mode": "sandbox",  # Change to "live" for real transactions
+    "client_id": os.getenv("PAYPAL_CLIENT_ID"),
+    "client_secret": os.getenv("PAYPAL_CLIENT_SECRET")
+})
+
+# Stripe Configuration
+stripe.api_key = os.getenv("STRIPE_SECRET_KEY")
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+>>>>>>> origin/main
 # PayPal Payment Route
 @app.route('/pay', methods=['POST'])
 def pay():
@@ -444,6 +471,7 @@ def payment_cancel():
     return render_template('payment_cancelled.html')
 
 # Error handling & Display Payment Buttons on 404 Page
+<<<<<<< HEAD
 @app.route('/payment')
 def page_not_found(e):
     return render_template('payment.html', stripe_public_key=os.getenv("STRIPE_PUBLIC_KEY"))
@@ -454,6 +482,11 @@ def create_database():
     with app.app_context():
         db.create_all()
 
+=======
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('page-404.html', stripe_public_key=os.getenv("STRIPE_PUBLIC_KEY"))
+>>>>>>> origin/main
 
 if __name__ == "__main__":
     create_database()

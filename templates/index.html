@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<<<<<<< HEAD
 
 {% for message in get_flashed_messages() %}
 <div class="message_flash_container">
@@ -13,6 +14,13 @@
 		<div class="owl-carousel owl-theme full-screen">
 			<div class="item">
 				<img src="{{url_for('static', filename='images/bg-home.jpg')}}" alt="Slider">
+=======
+	<!-- BANNER -->
+    <div id="oc-fullslider" class="banner">
+    	<div class="owl-carousel owl-theme full-screen">
+	    	<div class="item">
+	        	<img src="{{url_for('static', filename='images/bg-home.jpg')}}" alt="Slider">
+>>>>>>> origin/main
 	        	<div class="overlay-bg"></div>
 	        	<div class="container d-flex align-items-center">
 	            	<div class="wrap-caption">
@@ -495,5 +503,38 @@
 			</div>
 		</div>
 	</div>
+<<<<<<< HEAD
+=======
+	<!-- PayPal Button -->
+	<form action="/pay" method="POST">
+		<button type="submit">Pay with PayPal</button>
+	  </form>
+	
+	  <!-- Stripe Button -->
+	   
+	  <button id="checkout-button">Pay with Stripe</button>
+	
+	  <!-- Include Stripe.js -->
+	  <script src="https://js.stripe.com/v3/"></script>
+	
+	  <script>
+		document.addEventListener("DOMContentLoaded", function () {
+		  var stripe = Stripe("{{ stripe_public_key }}");
+	
+		  document.getElementById("checkout-button").addEventListener("click", function () {
+			fetch("/create-checkout-session", { method: "POST" })
+			  .then(response => response.json())
+			  .then(session => {
+				if (session.id) {
+				  stripe.redirectToCheckout({ sessionId: session.id });
+				} else {
+				  console.error("Session ID missing:", session);
+				}
+			  })
+			  .catch(error => console.error("Error:", error));
+		  });
+		});
+	  </script>
+>>>>>>> origin/main
 
 {% endblock %}
