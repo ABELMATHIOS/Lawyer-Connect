@@ -26,7 +26,6 @@ Overall, this repository provides the source code for a professional lawyer webs
 
 # 2. Usage
 
-Once the installation is complete and the server is running, you can access the website by navigating to http://127.0.0.1:5000 in your web browser.
 
 The website will display the homepage, where you can explore features like booking appointments, checking out attorney profiles, and paying fees. Depending on the user role (lawyer or client), the available features will differ.
 
