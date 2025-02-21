@@ -55,7 +55,8 @@ create a virtual environment for the project to avoid conflicts with other Pytho
 ```
    
 4. Activate Virtual environment
-   A. windows
+
+    A. windows
 ```bash
    venv\Scripts\activate
 ```
