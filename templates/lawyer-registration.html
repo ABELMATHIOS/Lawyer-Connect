@@ -3,7 +3,9 @@
 {% block content%}
 
      {% for message in get_flashed_messages()%}
-        {{message}}
+     <div class="message_flash_container">
+        <div class="message_flash">{{message}}</div>
+       </div>
       {% endfor %}  
 
         

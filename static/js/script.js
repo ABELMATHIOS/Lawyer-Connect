@@ -174,8 +174,41 @@ $(document).ready(function(){
 // )
 
 
+// Appointment form Javascript
+const popup = document.getElementById("myPopup");
+const overlay = document.getElementById("overlay");
+const openPopupButton = document.getElementById("openPopupButton");
+
+openPopupButton.addEventListener("click", () => {
+	popup.style.display = "block";
+	overlay.style.display = "block";  
+});
+
+function closePopup() {
+	popup.style.display = "none";
+	overlay.style.display = "none"; // Hide the overlay
+}
+
+// Close the popup if the overlay is clicked
+overlay.addEventListener("click", closePopup);
+
+// Optional: Close with the Escape key
+document.addEventListener("keydown", (event) => {
+	if (event.key === "Escape") {
+		closePopup();
+	}
+});
 
 
 
-  
-  
+// ==============================================Rating==============================================
+
+const ratingInputs = document.querySelectorAll('.rating input');
+
+ratingInputs.forEach(input => {
+  input.addEventListener('change', () => {
+	console.log("Rating submitted:", input.value);
+
+
+  });
+});

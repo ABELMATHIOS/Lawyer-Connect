@@ -18,7 +18,7 @@
         <hr>
         <button class="btn-header">Users</button>
         <button class="btn-header">Lawyers</button>
-        <button class="btn-header">Revenue</button>
+        <button class="btn-header">Appointment</button>
         <button class="btn-header">Ratings</button>
      </div>
 
@@ -96,7 +96,32 @@
 
   </div>
 
-
+<br><br><br>
+  <section class="section appointments">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Service</th>
+                <th>Lawyer</th>
+                <th>Appointment Time</th>
+            </tr>
+        </thead>
+        {% for user in appointments %}
+        <tbody>
+            <tr>
+                <td>{{ user[0] }}</td>
+                <td>{{ user[1] }}</td>
+                <td>{{ user[2]}}</td>
+                <td>{{ user[3]}}</td>
+                <td>{{ user[4] }}</td>
+            </tr>
+        </tbody>
+        <hr>
+        {% endfor %}
+    </table>
+ </section>
 
 <style>
     body{

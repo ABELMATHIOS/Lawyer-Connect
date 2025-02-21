@@ -1,0 +1,38 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+
+  <!-- PayPal Button -->
+  <form action="/pay" method="POST">
+    <button type="submit">Pay with PayPal</button>
+  </form>
+
+  <!-- Stripe Button -->
+   
+  <button id="checkout-button">Pay with Stripe</button>
+
+  <!-- Include Stripe.js -->
+  <script src="https://js.stripe.com/v3/"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var stripe = Stripe("{{ stripe_public_key }}");
+
+      document.getElementById("checkout-button").addEventListener("click", function () {
+        fetch("/create-checkout-session", { method: "POST" })
+          .then(response => response.json())
+          .then(session => {
+            if (session.id) {
+              stripe.redirectToCheckout({ sessionId: session.id });
+            } else {
+              console.error("Session ID missing:", session);
+            }
+          })
+          .catch(error => console.error("Error:", error));
+      });
+    });
+  </script>
+
+
+{% endblock%}
