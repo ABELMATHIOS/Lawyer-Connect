@@ -93,8 +93,12 @@ The website will display the homepage, where you can explore features like booki
 Available Routes
 Login Page
 
-Route: `/login`
-Access the login page to authenticate users.
+Route: `/login-r`
+Access the login page for authenticate users.
+Register Page
+
+Route: `/login-u`
+Access the login page for authenticate lawyers.
 Register Page
 
 Route: `/register`
