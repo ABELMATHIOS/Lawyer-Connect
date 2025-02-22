@@ -1,4 +1,3 @@
-N:
 <h1 align="center">LAWYER WEBSITE</h1>
 
 ## Overview
@@ -27,47 +26,65 @@ Overall, this repository provides the source code for a professional lawyer webs
 
 ## 1. Installation
 <a id="installation"></a>
-Follow these steps to set up the Lawyer Connect project on your local machine.
+Follow these steps to set up the **Lawyer Connect** project on your local machine.
 
 ### 1.1. Prerequisites
 Before you begin, ensure you have the following software installed on your computer:
-- Python 3.x or higher
-- Git (for cloning the repository)
-- pip (Python package manager)
+- **Python 3.x** or higher
+- **Git** (for cloning the repository)
+- **pip** (Python package manager)
 
 ### 1.2. Steps to Install
 
-1. Clone the Repository  
+1. **Clone the Repository**  
    Clone the repository to your local machine using the following command:
+```bash
    git clone https://github.com/ABELMATHIOS/Lawyer-Connect.git 
+```
 
 2. Navigate to the Project Directory
    Change your current directory to the project folder:
+```bash
    cd Lawyer-Connect
+```
 
 3. Create a Virtual Environment
 create a virtual environment for the project to avoid conflicts with other Python projects:
+```bash
    python -m venv venv 
+```
    
 4. Activate Virtual environment
 
     A. windows
+```bash
    venv\Scripts\activate
+```
    B. macos/linux
+```bash
    source venv/bin/activate
+```
 
 5. Install dependencies
+```bash
    pip install -r requirements.txt
+```
 
 6. configure environment
+```bash
    FLASK_APP=app.py
    SECRET_KEY=your_secret_key
    PAYPAL_CLIENT_ID=your_paypal_client_id
+```
 
 7. run the application
+```bash
    flask run
+```
 8. testing
+```bash
    pytest
+```
 ...
 
 ## 2. Usage
@@ -76,30 +93,30 @@ The website will display the homepage, where you can explore features like booki
 Available Routes
 Login Page
 
-Route: /login
+Route: `/login`
 Access the login page to authenticate users.
 Register Page
 
-Route: /register
+Route: `/register`
 New users can register an account here.
 Add User
 
-Route: /adduser
+Route: `/adduser`
 Admins can add new users to the system.
 Add Team
 
-Route: /addteam
+Route: `/addteam`
 Admins can add new members to the legal team.
 Meeting Booking
 
-Route: /bookmeeting
+Route: `/bookmeeting`
 Clients can book a meeting with a lawyer.
 View Meetings
 
-Route: /viewmeetings
+Route: `/viewmeetings`
 View all scheduled meetings.
 
-Route: /logout
+Route: `/logout`
 Log out of the current session.
 Payment Options
 The app integrates with PayPal and Stripe for online payments. Once a meeting is scheduled, clients can make payments via these methods.
@@ -113,24 +130,24 @@ Stripe: A secure way to pay using a credit/debit card.
 
 ### 3.1. Frontend
 <a id="frontend"></a>
-HTML/CSS: The website's structure and styling are built using HTML5 and CSS ensuring responsiveness across various devices
+`HTML/CSS`: The website's structure and styling are built using HTML5 and CSS ensuring responsiveness across various devices
 
-JavaScript: Used for dynamic interactions, including forms, appointment bookings, and integrating features like the Owl Carousel for testimonials
+`JavaScript`: Used for dynamic interactions, including forms, appointment bookings, and integrating features like the Owl Carousel for testimonials
 
 ### 3.1.1. Backend
 <a id="backend"></a>
-The backend is powered by Python, specifically using the Flask web framework. Flask provides a simple yet powerful way to handle routes, user authentication, meeting scheduling, and integration with payment gateways like PayPal and Stripe.
+The backend is powered by `Python`, specifically using the Flask web framework. Flask provides a simple yet powerful way to handle routes, user authentication, meeting scheduling, and integration with payment gateways like PayPal and Stripe.
 
 ### 3.2.2. Database
 <a id="database"></a>
-For this project, SQLite is used as the database (although you can configure other databases if needed). The database stores data related to users, attorneys, appointments, and payment details. It is lightweight and ideal for local development, though it can be switched out for more robust solutions in production.
+For this project, `SQLite` is used as the database (although you can configure other databases if needed). The database stores data related to users, attorneys, appointments, and payment details. It is lightweight and ideal for local development, though it can be switched out for more robust solutions in production.
 
 ### 3.3.3. Other Technologies
 <a id="other-technologies"></a>
 
-PayPal API: Integrated to handle payments and donations for clients booking consultations with attorneys.
+`PayPal API`: Integrated to handle payments and donations for clients booking consultations with attorneys.
 
-Stripe API: Used for credit card payments, offering an additional payment option for clients.
+`Stripe API`: Used for credit card payments, offering an additional payment option for clients.
 
 ## 4. Features
 <a id="features"></a>
@@ -139,38 +156,38 @@ Stripe API: Used for credit card payments, offering an additional payment option
 <a id="lawyer-features"></a>
 The lawyer side of the website includes several key features to help manage their professional profile and workload:
 
-1. Professional Bio/Attorney Profiles: Lawyers can create and manage their professional bio, displaying their legal expertise, qualifications, and practice areas.
+1. `Professional Bio/Attorney Profiles`: Lawyers can create and manage their professional bio, displaying their legal expertise, qualifications, and practice areas.
 
 
-2. Monitor Activity (Track): Attorneys can track their scheduled appointments and view upcoming client bookings.
+2. `Monitor Activity (Track)`: Attorneys can track their scheduled appointments and view upcoming client bookings.
 
 
-3. Receive Payment: The website integrates payment gateways, allowing attorneys to receive payments securely for services rendered.
+3. `Receive Payment`: The website integrates payment gateways, allowing attorneys to receive payments securely for services rendered.
 
 
-4. Contact Information: Attorneys can display and update their contact information, making it easier for clients to reach them.
+4. `Contact Information`: Attorneys can display and update their contact information, making it easier for clients to reach them.
 
 
-5. Online Appointment Booking: Clients can directly book appointments with attorneys, with options to select dates and times based on availability.
+5. `Online Appointment Booking`: Clients can directly book appointments with attorneys, with options to select dates and times based on availability.
 
 
-6. Showcase Social Media: Lawyers can link to their social media profiles, providing additional ways for clients to connect and learn more about their work.
+6. `Showcase Social Media`: Lawyers can link to their social media profiles, providing additional ways for clients to connect and learn more about their work.
 
 
 ### 4.2. Client Features
 <a id="client-features"></a>
 The client side focuses on ease of use and accessibility:
 
-1. Contact Information: Clients can view detailed contact information for attorneys, including email addresses, phone numbers, and office locations.
+1. `Contact Information`: Clients can view detailed contact information for attorneys, including email addresses, phone numbers, and office locations.
 
 
-2. Book Appointments: Clients can easily schedule appointments with attorneys through an intuitive online booking system.
+2. `Book Appointments`: Clients can easily schedule appointments with attorneys through an intuitive online booking system.
 
 
-3. Pay Lawyer Fees: Clients can pay their lawyer fees securely through integrated payment gateways (PayPal and Stripe).
+3. `Pay Lawyer Fees`: Clients can pay their lawyer fees securely through integrated payment gateways (PayPal and Stripe).
 
 
-4. Seek Help: Clients can fill out contact forms or reach out directly to attorneys for legal advice and services.
+4. `Seek Help`: Clients can fill out contact forms or reach out directly to attorneys for legal advice and services.
 
 ## 5. Folder Structure 
 <a id="folderstructure"></a>
@@ -185,44 +202,53 @@ Here are some Issues you may encounter with Lawyer connect as well as their solu
 
 ### Common Issues When Accessing the Lawyer-Connect Repository
 
-1. User Login Issues
-   - Solution:
-      Ensure login details are correct. Reset password if needed. Check backend authentication config.
-   
+1. **User Login Issues**
+   - **Solution**:
+   ```bash
+   Ensure login details are correct. Reset password if needed. Check backend authentication config.
+   ```
 
-2. Stripe and PayPal Payments Not Working
-   - Solution:
-      Verify API keys in .env. Test in sandbox environment.
-   
+2. **Stripe and PayPal Payments Not Working**
+   - **Solution**:
+   ```bash
+   Verify API keys in .env. Test in sandbox environment.
+   ```
 
-3. Page Not Loading Properly
-   - Solution:
-      Clear cache, check for 404 errors, ensure static files and routing are correct.
-   
+3. **Page Not Loading Properly**
+   - **Solution**:
+   ```bash
+   Clear cache, check for 404 errors, ensure static files and routing are correct.
+   ```
 
-4. Admin Access Issues
-   - Solution:
-      Verify admin privileges, check user role and permissions in database.
-   
+4. **Admin Access Issues**
+   - **Solution**:
+   ```bash
+   Verify admin privileges, check user role and permissions in database.
+   ```
 
-5. "Repository Not Found" or "403 Forbidden" Error
-   - Solution:
-      Check repository URL, ensure correct permissions or collaborator access.
-   
+5. **"Repository Not Found" or "403 Forbidden" Error**
+   - **Solution**:
+   ```bash
+   Check repository URL, ensure correct permissions or collaborator access.
+   ```
 
-6. Failed to Clone the Repository
-   - Solution:
-      Set up Git environment, add SSH keys, or use HTTPS for cloning.
-   
+6. **Failed to Clone the Repository**
+   - **Solution**:
+   ```bash
+   Set up Git environment, add SSH keys, or use HTTPS for cloning.
+   ```
 
-7. Outdated or Missing Dependencies
-   - Solution:
-      Run pip install -r requirements.txt, ensure Python and dependencies are updated.
+7. **Outdated or Missing Dependencies**
+   - **Solution**:
+   ```bash
+   Run pip install -r requirements.txt, ensure Python and dependencies are updated.
+   ```
 
-8. Code Not Running as Expected
-   - Solution:
-      Double-check .env file and server configurations, ensure correct environment selected.
-   
+8. **Code Not Running as Expected**
+   - **Solution**:
+   ```bash
+   Double-check .env file and server configurations, ensure correct environment selected.
+   ```
 
 ---
 
@@ -256,7 +282,10 @@ We always welcome contributers from all around the world to help, to comment, to
 1. Fork this repo.
 2. Create a new branch for your fix or feature.
 3. Make sure you write tests for your changes.
-4. Submit your pull request to the main branch.
+4. Submit your pull request to the `main` branch.
 5. Wait for our feedback and try to be patient.
 
 We appreciate your contributions! Thank you!
+
+
+
