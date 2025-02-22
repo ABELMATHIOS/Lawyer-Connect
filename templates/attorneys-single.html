@@ -1,0 +1,249 @@
+{% extends 'base.html' %}
+{% block content%}
+
+<!-- BANNER -->
+	<div class="section banner-page" data-background="images/banner-single.jpg">
+		<div class="content-wrap pos-relative">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="d-flex bd-highlight mb-3">
+							<div class="title-page">Attorney Profile</div>
+						</div>
+						<div class="d-flex bd-highlight mb-3">
+						    <nav aria-label="breadcrumb">
+							  <ol class="breadcrumb ">
+							    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+							    <li class="breadcrumb-item"><a href="attorneys.html">Attorney</a></li>
+							    <li class="breadcrumb-item active" aria-current="page">Attorney Profile</li>
+							  </ol>
+							</nav>
+					  	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- CONTENT -->
+	<div class="section">
+		<div class="content-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-8">
+
+						<div class="row rs-team-single">
+							<div class="col-sm-6 col-md-6">
+								<div class="media-box">
+									<img src="{{url_for('static', filename='images/team01.jpg')}}" alt="" class="img-fluid">
+								</div>
+								<div class="overlap-btn">
+									<div class="container">
+										<button class="btn btn-primary" id="openPopupButton">BOOK APPOINTMENT</button>
+									</div>
+								</div>
+								<div class="rating">
+									<input type="radio" id="star5" name="rating" value="5" /><label for="star5">☆</label>
+									<input type="radio" id="star4" name="rating" value="4" /><label for="star4">☆</label>
+									<input type="radio" id="star3" name="rating" value="3" /><label for="star3">☆</label>
+									<input type="radio" id="star2" name="rating" value="2" /><label for="star2">☆</label>
+									<input type="radio" id="star1" name="rating" value="1" /><label for="star1">☆</label>
+								</div>
+								<div style="display: flex; justify-content: center; ">
+								<button class="form-btn">Rate</button>
+							</div>
+							</div>
+							<div class="col-sm-6 col-md-6">
+								<div class="title">Rome Doel</div>
+								<div class="position">CEO & Lawyer</div>
+								<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla par- iatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Consect petur adipiscing elit. eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+								<p class="mb-0"><span class="text-primary">PHONE :</span> 0761-245 1658</p>
+								<p><span class="text-primary">E-MAIL :</span> romedoel@lawyer.com</p>
+								
+								<h4 class="text-secondary">Get in touch</h4>
+								<div class="sosmed-icon icon-bg-secondary d-inline-flex">
+									<a href="#"><i class="fa fa-facebook"></i></a> 
+									<a href="#"><i class="fa fa-twitter"></i></a> 
+									<a href="#"><i class="fa fa-instagram"></i></a> 
+									<a href="#"><i class="fa fa-linkedin"></i></a> 
+								</div>
+							</div>
+						</div>
+						
+  
+
+						<div class="row">
+							<div class="col-sm-12 col-md-12">
+								<h2 class="section-heading">
+									Attorney Skills
+								</h2>
+								<p class="subheading mb-4">"we always take care of clients seriously"</p>
+						
+								<div class="rs-progress mb-4">
+			              			<div class="name">Family Law</div>
+			          			  	<div class="persen">90%</div>
+			              			<div class="progress">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+
+								<div class="rs-progress mb-4">
+			              			<div class="name">Financial Law</div>
+			          			  	<div class="persen">75%</div>
+			              			<div class="progress">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+
+								<div class="rs-progress mb-4">
+			              			<div class="name">Sexual Offences</div>
+			          			  	<div class="persen">80%</div>
+			              			<div class="progress">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+
+								<div class="rs-progress mb-4">
+			              			<div class="name">Drug Offences</div>
+			          			  	<div class="persen">90%</div>
+			              			<div class="progress">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="row mt-5 mb-3">
+							<div class="col-sm-12 col-md-12">
+								<h2 class="section-heading">
+									Awards
+								</h2>
+								<p class="subheading mb-4">"we always take care of clients seriously"</p>
+						
+								<div class="row">
+									<div class="col-6 col-sm-6 col-md-6 col-lg-3">
+										<img src="images/client1.png" alt="">
+									</div>
+									<div class="col-6 col-sm-6 col-md-6 col-lg-3">
+										<img src="images/client2.png" alt="">
+									</div>
+									<div class="col-6 col-sm-6 col-md-6 col-lg-3">
+										<img src="images/client3.png" alt="">
+									</div>
+									<div class="col-6 col-sm-6 col-md-6 col-lg-3">
+										<img src="images/client4.png" alt="">
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+					<div class="col-sm-12 col-md-12 col-lg-4">
+						<div class="widget categories">
+							<ul class="category-nav">
+								<li><a href="#" title="Family Law">Family Law</a></li>
+								<li><a href="#" title="Financial Law">Financial Law</a></li>
+								<li><a href="#" title="Sexual Offences">Sexual Offences</a></li>
+								<li><a href="#" title="Drug Offences">Drug Offences</a></li>
+								<li><a href="#" title="Fire Accident">Fire Accident</a></li>
+								<li><a href="#" title="Shoplifthing">Shoplifthing</a></li>
+							</ul>
+						</div>
+
+						<div class="widget">
+							<div class="rs-box-widget bg-secondary">
+								<div class="icon">
+									<i class="fa fa-phone"></i>
+								</div>
+								<div class="body">
+									<h3>How Can We Help You?</h3>
+									<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla par- iatur.</p>
+									<a href="contact.html" class="text-primary">CONTACT US</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="widget">
+							<div class="rs-box-widget">
+								<div class="icon">
+									<i class="fa fa-file-pdf-o"></i>
+								</div>
+								<div class="body">
+									<h3>Download Brochure</h3>
+									<p>We always take care of clients seriously</p>
+									<a href="#" class="btn btn-primary">DOWNLOAD</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- End Sidebar -->
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+<!-- ---------------------------------------------------pop up section----------------------------------------------- -->
+
+
+	
+
+	<div id="overlay"></div> 
+	 <div id="myPopup" class="popup">
+        <span class="close-button" onclick="closePopup()">&times;</span>  <div class="popup-content">
+			<div class="container">
+				<h1>Book an Appointment</h1>
+				{% with messages = get_flashed_messages(with_categories=true) %}
+				{% if messages %}
+					{% for category, message in messages %}
+					<div class="alert alert-{{ category }}">{{ message }}</div>
+					{% endfor %}
+				{% endif %}
+				{% endwith %}
+				<form method="POST">
+					{{ form.csrf_token }}  
+					<div class="form-group">
+						{{ form.name.label }} {{ form.name(class="form-control") }}
+						{% if form.name.errors %}
+							<ul class="errors">
+								{% for error in form.name.errors %}
+								<li>{{ error }}</li>
+								{% endfor %}
+							</ul>
+						{% endif %}
+					</div>
+					<div class="form-group">
+						{{ form.service.label }} {{ form.service(class="form-control") }}
+						{% if form.service.errors %}
+							<ul class="errors">
+								{% for error in form.service.errors %}
+								<li>{{ error }}</li>
+								{% endfor %}
+							</ul>
+						{% endif %}
+					</div>
+		
+					<div class="form-group">
+						{{ form.appointment_time.label }} {{ form.appointment_time(class="form-control") }}
+						{% if form.appointment_time.errors %}
+							<ul class="errors">
+								{% for error in form.appointment_time.errors %}
+								<li>{{ error }}</li>
+								{% endfor %}
+							</ul>
+						{% endif %}
+					</div>
+					{{ form.submit(class="btn btn-primary") }}
+				</form>
+			</div>
+		</div>
+	</div>
+
+{% endblock%}
