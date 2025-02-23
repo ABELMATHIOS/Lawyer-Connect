@@ -259,13 +259,6 @@ We, the team from Lawyer-Connect, are always happy about your feedback on our pr
 
 Contact us through Github: [Lawyer-Connect Repository](https://github.com/ABELMATHIOS/Lawyer-Connect/)
 
-####contributers
-1. Abel Mathios: [https://github.com/ABELMATHIOS](https://github.com/ABELMATHIOS)
-2. Siraj Abdulkadir: [https://github.com/Siraj-Abdulkadir](https://github.com/Siraj-Abdulkadir)
-3. Nathenael Tamirat: [https://github.com/NathenaelTamirat](https://github.com/NathenaelTamirat)
-4. Menilek Ayele: [https://github.com/MenilekAyele](https://github.com/MenilekAyele)
-5. Haileyesus Dagne: [https://github.com/Haile-Eyesus](https://github.com/Haile-Eyesus).
-
 WE ARE EAGER TO GROW AND LEARN!
 
 ## 8. Acknowledgement 
