@@ -93,30 +93,74 @@ The website will display the homepage, where you can explore features like booki
 Available Routes
 Login Page
 
-Route: `/login`
-Access the login page to authenticate users.
-Register Page
+### General Routes  
 
-Route: `/register`
-New users can register an account here.
-Add User
+Route: `/about`  
+Provides information about the platform.  
+🔹 Action: View About Page  
 
-Route: `/adduser`
-Admins can add new users to the system.
-Add Team
+Route: `/contact`  
+Users can find contact details or reach out for support.  
+🔹 Action: Contact Us  
 
-Route: `/addteam`
-Admins can add new members to the legal team.
-Meeting Booking
+Route: `/news`  
+Displays the latest news and updates.  
+🔹 Action: View Latest News  
 
-Route: `/bookmeeting`
-Clients can book a meeting with a lawyer.
-View Meetings
+---
 
-Route: `/viewmeetings`
-View all scheduled meetings.
+### User Routes  
 
-Route: `/logout`
+Route: `/register`  
+New users can register an account.  
+🔹 Action: Register User  
+
+Route: `/login-u`  
+Users can log in to their accounts.  
+🔹 Action: User Login  
+
+Route: `/logout-u`  
+Users can log out of their accounts.  
+🔹 Action: User Logout  
+
+Route: `/dashboard-u`  
+Users can access their personal dashboard.  
+🔹 Action: Access User Dashboard  
+
+Route: `/user-r`  
+View all registered users.  
+🔹 Action: View User Registrations  
+
+---
+
+### Lawyer Routes  
+
+Route: `/attorneys`  
+Displays a list of available lawyers.  
+🔹 Action: View Lawyers List  
+
+Route: `/attorneys_single`  
+View detailed information about a specific lawyer.  
+🔹 Action: View Lawyer Details  
+
+Route: `/lawyer-r`  
+View all registered lawyers.  
+🔹 Action: View Lawyer Registrations  
+
+Route: `/login-l`  
+Lawyers can log in to their accounts.  
+🔹 Action: Lawyer Login  
+
+Route: `/dashboard-l`  
+Lawyers can access their personal dashboard.  
+🔹 Action: Access Lawyer Dashboard  
+
+### Admin Routes  
+
+Route: `/admin`  
+Restricted access for administrators only.  
+🔹 Action: Admin Access
+
 Log out of the current session.
 Payment Options
 The app integrates with PayPal and Stripe for online payments. Once a meeting is scheduled, clients can make payments via these methods.
