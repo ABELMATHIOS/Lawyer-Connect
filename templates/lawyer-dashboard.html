@@ -1,0 +1,88 @@
+{% extends 'base.html'%}
+
+{% block content%}
+
+<div class="dashboard-header">
+    <h1 style="color: #000;"> Wellcome <span style="color: #850f0f;"> {{session.get("l_username")}}</span></h1>
+  
+    <form action="{{url_for('logout')}}" method="post">
+      <button class="form-btn-out" type="submit">log out</button>
+    </form>
+    
+  </div>
+  
+
+
+  <div class="dashboard-container">
+    <div class="sidebar">
+        <div class="user-profile">
+            <img src="{{url_for('static', filename='images/default-pp.jpg')}}" alt="Profile Picture" class="profile-image">  <h2 class="user-name">{{detail.l_username}}</h2>  <p class="user-role">Lawyer</p> </div>
+    </div>
+    <div class="main-content">
+        <div class="content-area">
+            <div class="user-details">
+              <div class="detail-row">
+                  <div class="detail-label">First Name:</div>
+                  <div class="detail-value">{{detail.l_first_name}} </div> </div>
+              <div class="detail-row">
+                  <div class="detail-label">Last Name:</div>
+                  <div class="detail-value">{{detail.l_last_name}} </div> </div>
+                <div class="detail-row">
+                    <div class="detail-label">Username:</div>
+                    <div class="detail-value">{{detail.l_username}}</div> </div>
+                <div class="detail-row">
+                    <div class="detail-label">Email:</div>
+                    <div class="detail-value">{{detail.l_email}} </div> </div>
+                <div class="detail-row">
+                    <div class="detail-label">Phone:</div>
+                    <div class="detail-value">{{detail.l_phone}} </div> </div>
+                <div class="detail-row">
+                    <div class="detail-label">Specialty:</div>
+                    <div class="detail-value">{{detail.l_specialty}} </div> </div>
+                <div class="detail-row">
+                    <div class="detail-label">Experience:</div>
+                    <div class="detail-value">{{detail.l_experience}} </div> </div>
+                <div class="detail-row">
+                    <div class="detail-label">Date Added:</div>
+                    <div class="detail-value">{{detail.l_date_added}} </div> </div>
+                <div class="detail-row">
+                    <div class="detail-label">Last Login:</div>
+                    <div class="detail-value">2024-07-26 10:00 AM</div> </div>
+            </div>
+        </div>
+    </div>
+  </div>  
+
+<br><br><br>
+
+<div class="lawyer-appointments">
+    <div class="header-appointments">
+        <h3>Appointments</h3>
+    </div>
+    <div class="lawyer-appointments-booked">
+    <table class="lawyer-appointments-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Service</th>
+                <th>Lawyer</th>
+                <th>Appointment Time</th>
+            </tr>
+        </thead>
+        {% for user in booked_apps %}
+        <tbody>
+            <tr>
+                <td>{{ user[1] }}</td>
+                <td>{{ user[2]}}</td>
+                <td>{{ user[3]}}</td>
+                <td>{{ user[4] }}</td>
+            </tr>
+        </tbody>
+        <hr>
+        {% endfor %}
+    </table>
+  </div>
+</div>
+
+ <br><br><br>
+{% endblock %}

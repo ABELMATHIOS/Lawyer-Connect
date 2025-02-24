@@ -1,0 +1,499 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for message in get_flashed_messages() %}
+<div class="message_flash_container">
+	<div class="message_flash">{{message}}</div>
+   </div>
+{% endfor %}
+
+	<!-- BANNER -->
+    <div id="oc-fullslider" class="banner">
+		<div class="owl-carousel owl-theme full-screen">
+			<div class="item">
+				<img src="{{url_for('static', filename='images/bg-home.jpg')}}" alt="Slider">
+	        	<div class="overlay-bg"></div>
+	        	<div class="container d-flex align-items-center">
+	            	<div class="wrap-caption">
+		                <h1 class="caption-heading">Welcome to<br>Lawyer-Connect</h1>
+		                <p>Lawyer Connect offers expert legal services, fostering strong client relationships and delivering personalized solutions in various practice areas with integrity.</p>
+		                <a href="./about.html" class="btn btn-primary">LEARN MORE</a>
+		            </div>  
+	            </div>
+	    	</div>
+	    	<div class="item">
+	            <img src="{{url_for('static', filename='images/bg-home02.jpg')}}" alt="Slider">
+	            <div class="overlay-bg"></div>
+	            <div class="container d-flex align-items-center">
+	            	<div class="wrap-caption">
+		                <h1 class="caption-heading">Welcome to<br>Lawyer-Connect</h1>
+		                <p>Lawyer Connect offers expert legal services, fostering strong client relationships and delivering personalized solutions in various practice areas with integrity.</p>
+		                <a href="./about.html" class="btn btn-primary">LEARN MORE</a>
+		            </div>  
+	            </div>
+	        </div> 
+    	</div>
+	    <div class="custom-nav owl-nav"></div>
+    </div>	
+
+    <!-- CTA -->
+	<div class="section">
+		<div class="content-wrap py-0">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-12">
+						<div class="cta-overlap clearfix">
+			              	<div class="body-text mb-3">
+			                	<h3 class="my-1 text-white">The Attorneys You Want On Your Side</h3>
+			                	<p class="uk18 mb-0 text-primary">Every case is very important to us and we always take care of them seriously.</p>
+			              	</div>
+			              	<div class="body-action">
+			                	<a href="attorneys.html" class="btn btn-primary">CONSULTATION</a>
+			              	</div>
+			            </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<!-- OUR PROMISE? -->
+	<div class="section">
+		<div class="content-wrap pb-0">
+			<div class="container">
+				<div class="row align-items-end">
+					<div class="col-sm-12 col-md-12 col-lg-6">
+						<img src="{{url_for('static', filename='images/attorney.png')}}" alt="" class="img-fluid img-border">
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-6">
+						<h2 class="section-heading mt-3">
+							Our Promise?
+						</h2>
+						<p class="subheading mb-4">"we always take care of clients seriously"</p>
+			                	
+						<p>we prioritize your legal needs with unwavering dedication and integrity. Our experienced team will provide personalized attention, clear communication, and expert guidance throughout your legal journey. We are committed to achieving the best outcomes for our clients, ensuring your trust and satisfaction every step of the way.</p>
+						<blockquote class="quote">
+							<p class="uk18">"The law is reason, free from passion. It is the constant and perpetual will to render to everyone his due."</p>
+							<footer class="blockquote-footer">Carol Mongol <cite title="Source Title">General Manager</cite></footer>
+						</blockquote>
+						<div class="spacer-content"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- FUN FACT -->
+	<div class="section bgi-cover-center" style="background-color: #223555;">
+		<div class="content-wrap">
+			<div class="container">
+
+				<div class="row">
+					
+					<!-- Item 1 -->
+					<div class="col-sm-6 col-md-6 col-lg-3">
+						<div class="rs-icon-funfact">
+							<div class="icon">
+								<i class="fa fa-balance-scale"></i>
+							</div>
+							<div class="body-content">
+								<h2>212+</h2>
+								<p class="uk18">Succesful Cases</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Item 2 -->
+					<div class="col-sm-6 col-md-6 col-lg-3">
+						<div class="rs-icon-funfact">
+							<div class="icon">
+								<i class="fa fa-gavel"></i>
+							</div>
+							<div class="body-content">
+								<h2>172+</h2>
+								<p class="uk18">Cases Closed</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Item 3 -->
+					<div class="col-sm-6 col-md-6 col-lg-3">
+						<div class="rs-icon-funfact">
+							<div class="icon">
+								<i class="fa fa-users"></i>
+							</div>
+							<div class="body-content">
+								<h2>312+</h2>
+								<p class="uk18">Trusted Clients</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Item 4 -->
+					<div class="col-sm-6 col-md-6 col-lg-3">
+						<div class="rs-icon-funfact">
+							<div class="icon">
+								<i class="fa fa-briefcase"></i>
+							</div>
+							<div class="body-content">
+								<h2>5+</h2>
+								<p class="uk18">Expert Team</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- WHY CHOOSE -->
+<section id="why-choose">
+	<div class="section">
+		<div class="content-wrap">
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-sm-12 col-md-12">
+						<h2 class="section-heading text-center mb-4">
+							Legal Practice Areas
+						</h2>
+						<p class="subheading text-center mb-5">Every case is very important to us and we always take care of them seriously.</p>
+					</div>
+					
+				</div>
+				
+				<div class="row">
+					<!-- Item 1 -->
+					<div class="col-12 col-sm-6 col-md-4 mb-4">
+						<div class="box-icon-1 text-center">
+							<div class="icon">
+								<i class="fa fa-fire"></i>
+							</div>
+							<div class="body-content">
+								<h3>Fire Accident</h3>
+								<p>Uncontrolled flames causing damage and danger, often resulting from negligence, faulty equipment, or accidents, impacting lives significantly.</p>
+							</div>
+						</div>
+					</div>
+					<!-- Item 2 -->
+					<div class="col-12 col-sm-6 col-md-4 mb-4">
+						<div class="box-icon-1 text-center">
+							<div class="icon">
+								<i class="fa fa-ambulance"></i>
+							</div>
+							<div class="body-content">
+								<h3>Accident Injuries</h3>
+								<p>Physical harm resulting from unforeseen events, often causing pain, disability, and emotional trauma, significantly affecting daily life and recovery.</p>
+							</div>
+						</div>
+					</div>
+					<!-- Item 3 -->
+					<div class="col-12 col-sm-6 col-md-4 mb-4">
+						<div class="box-icon-1 text-center">
+							<div class="icon">
+								<i class="fa fa-users"></i>
+							</div>
+							<div class="body-content">
+								<h3>Family Law</h3>
+								<p>Encompasses legal matters related to family relationships, including divorce, child custody, adoption, and domestic violence, ensuring protection and rights.</p>
+							</div>
+						</div>
+					</div>
+					<!-- Item 4 -->
+					<div class="col-12 col-sm-6 col-md-4 mb-4">
+						<div class="box-icon-1 text-center">
+							<div class="icon">
+								<i class="fa fa-money"></i>
+							</div>
+							<div class="body-content">
+								<h3>Financial Law</h3>
+								<p>Governs transactions, securities, and investments, protecting investors, and regulating financial institutions to maintain market integrity.</p>
+							</div>
+						</div>
+					</div>
+					<!-- Item 5 -->
+					<div class="col-12 col-sm-6 col-md-4 mb-4">
+						<div class="box-icon-1 text-center">
+							<div class="icon">
+								<i class="fa fa-leaf"></i>
+							</div>
+							<div class="body-content">
+								<h3>Drug Offences</h3>
+								<p>Violations of laws related to illegal substances, including possession, trafficking, and manufacturing, often resulting in severe legal consequences.</p>
+							</div>
+						</div>
+					</div>
+					<!-- Item 6 -->
+					<div class="col-12 col-sm-6 col-md-4 mb-4">
+						<div class="box-icon-1 text-center">
+							<div class="icon">
+								<i class="fa fa-user-secret"></i>
+							</div>
+							<div class="body-content">
+								<h3>Civil Litigation</h3>
+								<p>Legal disputes between individuals or organizations, involving claims for damages or specific relief, typically resolved in court.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	<!-- OUR TESTIMONIALS -->
+	<div class="section bgi-cover-center" style="background-color: #223555;" data-background="images/testimony-bg.jpg">
+		<div class="content-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-12">
+						<h2 class="section-heading text-center text-white">
+							What Clients Say
+						</h2>
+						<p class="subheading text-center mb-5">Every case is very important to us and we always take care of them seriously.</p>
+					</div>
+				</div>
+				<div class="row">
+					
+					<div class="col-sm-12 col-md-12 col-lg-6">
+						<div id="testimonial" class="owl-carousel owl-theme owl-light">
+							<!-- Item 1 -->
+							<div class="item">
+								<div class="rs-box-testimony">
+									<div class="quote-box">
+										<div class="media-box">
+											<img src="{{url_for('static', filename='images/team-img1.jpg')}}" alt="" class="rounded-circle">
+										</div>
+										<div class="quote-name">
+											Abebe Kebede <span>Businessman</span>
+										</div>                        
+									</div>
+									<blockquote class="quote">
+										"Lawyer Connect exceeded my expectations! Their team was professional, responsive, and truly cared about my case. Thanks to their expertise, I achieved a positive outcome. I highly recommend them for anyone seeking trustworthy legal representation!"
+									</blockquote>
+								</div>
+							</div>
+							<!-- Item 2 -->
+							<div class="item">
+								<div class="rs-box-testimony">
+									<div class="quote-box">
+										<div class="media-box">
+											<img src="{{url_for('static', filename='images/team-img2.jpg')}}" alt="" class="rounded-circle">
+										</div>
+										<div class="quote-name">
+											Aster Aweke <span>Accountant</span>
+										</div>                        
+									</div>
+									<blockquote class="quote">
+										"Working with Lawyer Connect was a fantastic experience. Their knowledgeable team was always available to answer my questions and guide me through the process. I felt supported every step of the way. I highly recommend their services!"
+									</blockquote>
+								</div>
+							</div>
+							<!-- Item 3 -->
+							<div class="item">
+								<div class="rs-box-testimony">
+									<div class="quote-box">
+										<div class="media-box">
+											<img src="{{url_for('static', filename='images/team-img3.jpg')}}" alt="" class="rounded-circle">
+										</div>
+										<div class="quote-name">
+											 Chala Bekele <span>Businessman</span>
+										</div>                        
+									</div>
+									<blockquote class="quote">
+										"I'm incredibly thankful for the support from Lawyer Connect. Their professionalism and expertise made all the difference in my case. They truly care about their clients and work tirelessly for the best outcomes. Highly recommended!"
+									</blockquote>
+								</div>
+							</div>
+						</div>
+					</div>
+						
+					<div class="col-sm-12 col-md-12 col-lg-6">
+						<div class="row mt-4">
+							<div class="col-6 col-sm-4 col-md-4 mb-4">
+								<img src="{{url_for('static', filename='images/client1w.png')}}" alt="" class="img-fluid">
+							</div>
+							<div class="col-6 col-sm-4 col-md-4 mb-4">
+								<img src="{{url_for('static', filename='images/client2w.png')}}" alt="" class="img-fluid">
+							</div>
+							<div class="col-6 col-sm-4 col-md-4 mb-4">
+								<img src="{{url_for('static', filename='images/client3w.png')}}" alt="" class="img-fluid">
+							</div>
+							<div class="col-6 col-sm-4 col-md-4 mb-4">
+								<img src="{{url_for('static', filename='images/client4w.png')}}" alt="" class="img-fluid">
+							</div>
+							<div class="col-6 col-sm-4 col-md-4 mb-4">
+								<img src="{{url_for('static', filename='images/client5w.png')}}" alt="" class="img-fluid">
+							</div>
+							<div class="col-6 col-sm-4 col-md-4 mb-4">
+								<img src="{{url_for('static', filename='images/client6w.png')}}" alt="" class="img-fluid">
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- HOW TO HELP US -->
+	<div class="section">
+		<div class="content-wrap">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-sm-12 col-md-12">
+						<h2 class="section-heading text-center mb-4">
+							Meet Our Attorney
+						</h2>
+						<p class="subheading text-center mb-5">Every case is very important to us and we always take care of them seriously.</p>
+					</div>
+					
+				</div>
+				<div class="row">
+					<!-- Item 1 -->
+					<div class="col-sm-6 col-md-6 col-lg-3 mb-4">
+						<div class="rs-team-1">
+							<div class="media-box">
+								<a href="attorneys-single.html"><img src="{{url_for('static',filename='images/team01.jpg')}}" alt="" class="img-fluid"></a>
+							</div>
+							<div class="body">
+								<div class="title"><a href="attorneys-single.html">Rome Doel</a></div>
+								<div class="position">CEO & Lawyer</div>
+								<div class="sosmed-icon icon-bg-secondary d-inline-flex">
+			                        <a target="_blank" href="https://web.facebook.com/?_rdc=1&_rdr#"><i class="fa fa-facebook"></i></a> 
+									<a target="_blank" href="https://x.com/"><i class="fa fa-twitter"></i></a> 
+									<a target="_blank" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a> 
+									<a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a> 
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Item 2 -->
+					<div class="col-sm-6 col-md-6 col-lg-3 mb-4">
+						<div class="rs-team-1">
+							<div class="media-box">
+								<a href="attorneys-single.html"><img src="{{url_for('static',filename='images/team02.jpg')}}" alt="" class="img-fluid"></a>
+							</div>
+							<div class="body">
+								<div class="title"><a href="attorneys-single.html">Ella Doel</a></div>
+								<div class="position">Consumer Lawyer</div>
+								<div class="sosmed-icon icon-bg-secondary d-inline-flex">
+									<a target="_blank" href="https://web.facebook.com/?_rdc=1&_rdr#"><i class="fa fa-facebook"></i></a> 
+									<a target="_blank" href="https://x.com/"><i class="fa fa-twitter"></i></a> 
+									<a target="_blank" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a> 
+									<a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>  
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Item 3 -->
+					<div class="col-sm-6 col-md-6 col-lg-3 mb-4">
+						<div class="rs-team-1">
+							<div class="media-box">
+								<a href="attorneys-single.html"><img src="{{url_for('static',filename='images/team03.jpg')}}" alt="" class="img-fluid"></a>
+							</div>
+							<div class="body">
+								<div class="title"><a href="attorneys-single.html">Sarah Doel</a></div>
+								<div class="position">Criminal Lawyer</div>
+								<div class="sosmed-icon icon-bg-secondary d-inline-flex">
+									<a target="_blank" href="https://web.facebook.com/?_rdc=1&_rdr#"><i class="fa fa-facebook"></i></a> 
+									<a target="_blank" href="https://x.com/"><i class="fa fa-twitter"></i></a> 
+									<a target="_blank" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a> 
+									<a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a> 
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Item 4 -->
+					<div class="col-sm-6 col-md-6 col-lg-3 mb-4">
+						<div class="rs-team-1">
+							<div class="media-box">
+								<a href="attorneys-single.html"><img src="{{url_for('static',filename='images/team04.jpg')}}" alt="" class="img-fluid"></a>
+							</div>
+							<div class="body">
+								<div class="title"><a href="attorneys-single.html">George Doel</a></div>
+								<div class="position">Family Lawyer</div>
+								<div class="sosmed-icon icon-bg-secondary d-inline-flex">
+									<a target="_blank" href="https://web.facebook.com/?_rdc=1&_rdr#"><i class="fa fa-facebook"></i></a> 
+									<a target="_blank" href="https://x.com/"><i class="fa fa-twitter"></i></a> 
+									<a target="_blank" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a> 
+									<a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a> 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- CONTACT -->
+	<div class="section bgi-cover-center" data-background="images/hammer.png">
+		<div class="content-wrap pb-0">
+			<div class="container">
+				<div class="row align-items-end">
+					
+					<div class="col-12 col-md-7">
+						<h2 class="section-heading">
+							Consultation
+						</h2>
+						<p class="subheading mb-5">Don't hesitate to ask questions.</p>
+						
+						<form action="#" class="form-contact" id="contactForm">
+							<div class="row">
+								<div class="col-sm-6 col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control" id="p_name" placeholder="Full Name" required="">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-6">
+									<div class="form-group">
+										<input type="email" class="form-control" id="p_email" placeholder="Email" required="">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control" id="p_phone" placeholder="Phone Number">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-6">
+									<div class="form-group">
+										<select class="form-control" name="case" id="case">
+											<option value="Fire Accident">Fire Accident</option>
+											<option value="Accident Injuries">Accident Injuries</option>
+											<option value="Family Law">Family Law</option>
+											<option value="Financial Law">Financial Law</option>
+											<option value="Drug Offences">Drug Offences</option>
+											<option value="Civil Litigation">Civil Litigation</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								 <textarea id="p_message" class="form-control" rows="6" placeholder="Your Message"></textarea>
+								<div class="help-block with-errors"></div>
+							</div>
+							<div class="form-group">
+								<div id="success"></div>
+								<button type="submit" class="btn btn-primary">Send Now</button>
+							</div>
+						</form>
+						<div class="spacer-content"></div>
+
+					</div>
+
+					<div class="col-12 col-md-5">
+						<img src="{{url_for('static',filename='images/attorney2.png')}}" alt="" class="img-fluid">
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
