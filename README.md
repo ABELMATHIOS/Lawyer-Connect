@@ -162,12 +162,7 @@ Restricted access for administrators only.
 🔹 Action: Admin Access
 
 Log out of the current session.
-Payment Options
-The app integrates with PayPal and Stripe for online payments. Once a meeting is scheduled, clients can make payments via these methods.
 
-PayPal: Clients can use their PayPal account or card to pay for a meeting.
-Stripe: A secure way to pay using a credit/debit card.
-...
 
 ## 3. Technologies Used
 <a id="technologies-used"></a>
@@ -192,6 +187,13 @@ For this project, `SQLite` is used as the database (although you can configure o
 `PayPal API`: Integrated to handle payments and donations for clients booking consultations with attorneys.
 
 `Stripe API`: Used for credit card payments, offering an additional payment option for clients.
+
+Payment Options
+The app integrates with PayPal and Stripe for online payments. Once a meeting is scheduled, clients can make payments via these methods.
+
+PayPal: Clients can use their PayPal account or card to pay for a meeting.
+Stripe: A secure way to pay using a credit/debit card.
+...
 
 ## 4. Features
 <a id="features"></a>
